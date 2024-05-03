@@ -1,6 +1,6 @@
 {
   "name": "com.ewigedreamer.extensions.unity",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "displayName": "Unity Extensions",
   "description": "Extensions for Unity types",
   "unity": "2021.3",
