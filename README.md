@@ -1,6 +1,6 @@
 # Unity Extensions
 
-There is some extensions for Unity types.
+There is some extensions for Unity and System types.
 Nothing special, just some methods for reducing the amount of code.
 
 ## Importing
