@@ -271,5 +271,37 @@ namespace EwigeDreamer.Extensions.Unity
                 collection[i] = r;
             }
         }
+
+        public static void BiteLeft(this Rect source, float size, float spacing, out Rect leftPart, out Rect rightPart)
+        {
+            leftPart = source;
+            rightPart = source;
+            leftPart.xMax = source.xMin + size;
+            rightPart.xMin = source.xMin + size + spacing;
+        }
+
+        public static void BiteRight(this Rect source, float size, float spacing, out Rect leftPart, out Rect rightPart)
+        {
+            leftPart = source;
+            rightPart = source;
+            leftPart.xMax = source.xMax - size - spacing;
+            rightPart.xMin = source.xMax - size;
+        }
+
+        public static void BiteTop(this Rect source, float size, float spacing, out Rect topPart, out Rect bottomPart)
+        {
+            topPart = source;
+            bottomPart = source;
+            topPart.yMax = source.yMin + size;
+            bottomPart.yMin = source.yMin + size + spacing;
+        }
+
+        public static void BiteBottom(this Rect source, float size, float spacing, out Rect topPart, out Rect bottomPart)
+        {
+            topPart = source;
+            bottomPart = source;
+            topPart.yMax = source.yMax - size - spacing;
+            bottomPart.yMin = source.yMax - size;
+        }
     }
 }
