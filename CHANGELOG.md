@@ -1,3 +1,10 @@
+## [1.3.0] - 2024-06-14
+
+### Changed
+
+- Some improvements
+- Code style
+
 ## [1.2.0] - 2024-05-24
 
 ### Added

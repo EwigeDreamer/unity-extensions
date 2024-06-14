@@ -36,5 +36,7 @@ namespace EwigeDreamer.Extensions.System
         public static float Clamp(this float v, float min, float max) => Mathf.Clamp(v, min, max);
         public static float Clamp01(this float v) => Mathf.Clamp01(v);
         public static int Clamp(this int v, int min, int max) => Mathf.Clamp(v, min, max);
+        
+        
     }
 }

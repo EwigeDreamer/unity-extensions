@@ -53,6 +53,12 @@ namespace EwigeDreamer.Extensions.Unity
         public static int Max(this Vector2Int v) => Math.Max(v.x, v.y);
         public static int Max(this Vector3Int v) => Math.Max(Math.Max(v.x, v.y), v.z);
 
+        public static float Sum(this Vector2 v) => v.x + v.y;
+        public static float Sum(this Vector3 v) => v.x + v.y + v.z;
+        public static float Sum(this Vector4 v) => v.x + v.y + v.z + v.w;
+        public static int Sum(this Vector2Int v) => v.x + v.y;
+        public static int Sum(this Vector3Int v) => v.x + v.y + v.z;
+
         public static float Average(this Vector2 v) => (v.x + v.y) / 2f;
         public static float Average(this Vector3 v) => (v.x + v.y + v.z) / 3f;
         public static float Average(this Vector4 v) => (v.x + v.y + v.z + v.w) / 4f;
