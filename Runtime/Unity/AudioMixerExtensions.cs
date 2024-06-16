@@ -1,6 +1,6 @@
 using System;
 
-namespace EwigeDreamer.Extensions.Unity
+namespace ED.Extensions.Unity
 {
     public static class AudioMixerExtensions
     {

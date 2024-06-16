@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace EwigeDreamer.Extensions.System
+namespace ED.Extensions.System
 {
     public static class EnumFlagsExtensions
     {

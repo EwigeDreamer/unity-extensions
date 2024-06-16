@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace EwigeDreamer.Extensions.Unity
+namespace ED.Extensions.Unity
 {
     public static class RectExtensions
     {

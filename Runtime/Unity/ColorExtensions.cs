@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace EwigeDreamer.Extensions.Unity
+namespace ED.Extensions.Unity
 {
     public static class ColorExtensions
     {

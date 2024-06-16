@@ -1,6 +1,6 @@
 using System;
 
-namespace EwigeDreamer.Extensions.System
+namespace ED.Extensions.System
 {
     public static class TupleExtensions
     {

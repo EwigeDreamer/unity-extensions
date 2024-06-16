@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace EwigeDreamer.Extensions.System
+namespace ED.Extensions.System
 {
     public static class LinqExtensions
     {

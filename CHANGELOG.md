@@ -1,3 +1,10 @@
+## [1.3.1] - 2024-06-17
+
+### Fixed
+
+- Package Name
+- Namespace
+
 ## [1.3.0] - 2024-06-14
 
 ### Changed

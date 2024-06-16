@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using Random = System.Random;
 
-namespace EwigeDreamer.Extensions.System
+namespace ED.Extensions.System
 {
     public static class RandomExtensions
     {
