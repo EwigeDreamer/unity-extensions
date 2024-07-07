@@ -1,3 +1,9 @@
+## [1.3.2] - 2024-07-07
+
+### Changed
+
+- Removed empty lines
+
 ## [1.3.1] - 2024-06-17
 
 ### Fixed
