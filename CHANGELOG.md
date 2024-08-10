@@ -1,3 +1,9 @@
+## [1.4.0] - 2024-08-11
+
+### Added
+
+- Unity Pool Prewarm Extension
+
 ## [1.3.2] - 2024-07-07
 
 ### Changed
