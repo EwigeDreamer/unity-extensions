@@ -1,3 +1,7 @@
+## [1.5.1] - 2025-01-05
+### Changed
+- asmdef naming
+
 ## [1.5.0] - 2024-11-07
 ### Added
 - UniTask Extension

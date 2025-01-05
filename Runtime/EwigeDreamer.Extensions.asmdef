@@ -1,6 +1,6 @@
 {
-    "name": "ewigedreamer.extensions",
-    "rootNamespace": "",
+    "name": "EwigeDreamer.Extensions",
+    "rootNamespace": "ED.Extensions",
     "references": [
         "UniTask"
     ],

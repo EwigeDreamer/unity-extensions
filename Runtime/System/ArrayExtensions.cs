@@ -16,8 +16,8 @@ namespace ED.Extensions.System
         {
             if (source == null) throw new ArgumentNullException(nameof(source));
             for (var i = 0; i < source.GetLength(0); ++i)
-            for (var j = 0; j < source.GetLength(1); ++j)
-                source[i, j] = value;
+                for (var j = 0; j < source.GetLength(1); ++j)
+                    source[i, j] = value;
             return source;
         }
 
@@ -37,8 +37,8 @@ namespace ED.Extensions.System
             var width = Math.Min(source.Width(), destination.Width());
             var height = Math.Min(source.Height(), destination.Height());
             for (var i = 0; i < height; ++i)
-            for (var j = 0; j < width; ++j)
-                destination[i, j] = source[i, j];
+                for (var j = 0; j < width; ++j)
+                    destination[i, j] = source[i, j];
         }
 
         public static TTarget[,] Convert<TSource, TTarget>(this TSource[,] source, Func<TSource, TTarget> select)
@@ -49,8 +49,8 @@ namespace ED.Extensions.System
             var height = source.Height();
             var result = new TTarget[height, width];
             for (var i = 0; i < height; ++i)
-            for (var j = 0; j < width; ++j)
-                result[i, j] = select(source[i, j]);
+                for (var j = 0; j < width; ++j)
+                    result[i, j] = select(source[i, j]);
             return result;
         }
 
@@ -77,9 +77,9 @@ namespace ED.Extensions.System
             if (source == null) throw new ArgumentNullException(nameof(source));
             comparer ??= EqualityComparer<T>.Default;
             for (var i = 0; i < source.GetLength(0); ++i)
-            for (var j = 0; j < source.GetLength(1); ++j)
-                if (comparer.Equals(source[i, j], item))
-                    return (i, j);
+                for (var j = 0; j < source.GetLength(1); ++j)
+                    if (comparer.Equals(source[i, j], item))
+                        return (i, j);
             return (-1, -1);
         }
 
@@ -123,24 +123,24 @@ namespace ED.Extensions.System
         {
             if (source == null) throw new ArgumentNullException(nameof(source));
             for (var i = 0; i < source.GetLength(0); ++i)
-            for (var j = 0; j < source.GetLength(1); ++j)
-                yield return selector(source[i, j]);
+                for (var j = 0; j < source.GetLength(1); ++j)
+                    yield return selector(source[i, j]);
         }
 
         public static IEnumerable<T2> Select<T1, T2>(this T1[,] source, Func<T1, int, int, T2> selector)
         {
             if (source == null) throw new ArgumentNullException(nameof(source));
             for (var i = 0; i < source.GetLength(0); ++i)
-            for (var j = 0; j < source.GetLength(1); ++j)
-                yield return selector(source[i, j], i, j);
+                for (var j = 0; j < source.GetLength(1); ++j)
+                    yield return selector(source[i, j], i, j);
         }
 
         public static IEnumerable<T> ToEnumerable<T>(this T[,] source)
         {
             if (source == null) throw new ArgumentNullException(nameof(source));
             for (var i = 0; i < source.GetLength(0); ++i)
-            for (var j = 0; j < source.GetLength(1); ++j)
-                yield return source[i, j];
+                for (var j = 0; j < source.GetLength(1); ++j)
+                    yield return source[i, j];
         }
     }
 }
