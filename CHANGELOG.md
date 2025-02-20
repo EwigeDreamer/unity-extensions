@@ -1,3 +1,7 @@
+## [1.6.0] - 2025-02-21
+### Added
+- VContainer Extension
+
 ## [1.5.1] - 2025-01-05
 ### Changed
 - asmdef naming

@@ -2,7 +2,8 @@
     "name": "EwigeDreamer.Extensions",
     "rootNamespace": "ED.Extensions",
     "references": [
-        "UniTask"
+        "UniTask",
+        "VContainer"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -15,7 +16,12 @@
         {
             "name": "com.cysharp.unitask",
             "expression": "",
-            "define": "UNITASK_EXTENSIONS_SUPPORT"
+            "define": "ED_UNITASK_EXTENSIONS_SUPPORT"
+        },
+        {
+            "name": "jp.hadashikick.vcontainer",
+            "expression": "",
+            "define": "ED_VCONTAINER_EXTENSIONS_SUPPORT"
         }
     ],
     "noEngineReferences": false

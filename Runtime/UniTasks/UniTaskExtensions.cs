@@ -1,4 +1,4 @@
-# if UNITASK_EXTENSIONS_SUPPORT
+# if ED_UNITASK_EXTENSIONS_SUPPORT
 
 using Cysharp.Threading.Tasks;
 using UnityEngine;
