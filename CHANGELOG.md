@@ -1,3 +1,7 @@
+## [1.7.0] - 2025-02-24
+### Added
+- Linq FirstOrDefault Extensions
+
 ## [1.6.0] - 2025-02-21
 ### Added
 - VContainer Extension

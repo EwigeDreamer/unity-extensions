@@ -298,6 +298,22 @@ namespace ED.Extensions.System
                     yield return item;
         }
 
+        public static T FirstOrDefault<T>(this IEnumerable<T> source, T defaultValue)
+        {
+            if (source == null) throw new ArgumentNullException(nameof(source));
+            using var enumerator = source.GetEnumerator();
+            return enumerator.MoveNext() ? enumerator.Current : defaultValue;
+        }
+
+        public static T FirstOrDefault<T>(this IEnumerable<T> source, Func<T, bool> predicate, T defaultValue)
+        {
+            if (source == null) throw new ArgumentNullException(nameof(source));
+            if (predicate == null) throw new ArgumentNullException(nameof(predicate));
+            foreach (var item in source)
+                if (predicate(item)) return item;
+            return defaultValue;
+        }
+
         /// <summary>
         ///     It's infinity! Use carefully!
         /// </summary>
