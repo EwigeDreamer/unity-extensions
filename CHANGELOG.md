@@ -1,3 +1,7 @@
+## [1.8.0] - 2025-06-12
+### Added
+- SceneExtensions
+
 ## [1.7.0] - 2025-02-24
 ### Added
 - Linq FirstOrDefault Extensions
