@@ -1,6 +1,6 @@
 {
   "name": "com.ewigedreamer.extensions",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "displayName": "ED Unity Extensions",
   "description": "Extensions for Unity and System types",
   "unity": "2021.3",
