@@ -1,3 +1,7 @@
+## [1.10.0] - 2026-02-22
+### Added
+- ReflectionExtensions
+
 ## [1.9.0] - 2025-06-26
 ### Added
 - GameObjectExtensions
